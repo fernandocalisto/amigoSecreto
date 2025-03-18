@@ -6,6 +6,7 @@ function adicionar (){
     let nome = document.getElementById('nome-amigo').value;
     listaNomes.innerHTML += `${nome}<br>`;
     participantes.push(nome);
+    document.getElementById('nome-amigo').value = '';
 }
 
 function embaralhar(array) {
