@@ -28,8 +28,8 @@ function embaralhar(array) {
 }
 
 function sortear(){
-    if (participantes.length < 2) {
-        alert("Adicione pelo menos dois participantes!");
+    if (participantes.length < 4) {
+        alert("Adicione pelo menos quatro participantes!");
         return;
     }
 
