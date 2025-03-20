@@ -4,6 +4,10 @@ let participantes = [];
 
 function adicionar (){
     let nome = document.getElementById('nome-amigo').value;
+    if (nome == ''){
+        alert('Insira o nome desejado!');
+        return;
+    }
     listaNomes.innerHTML += `${nome}<br>`;
     participantes.push(nome);
     document.getElementById('nome-amigo').value = '';
