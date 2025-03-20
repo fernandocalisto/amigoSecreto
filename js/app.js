@@ -8,6 +8,10 @@ function adicionar (){
         alert('Insira o nome desejado!');
         return;
     }
+    if(participantes.includes(nome)){
+        alert('Nomes repetidos não são permitidos!');
+        return;
+    }
     listaNomes.innerHTML += `${nome}<br>`;
     participantes.push(nome);
     document.getElementById('nome-amigo').value = '';
